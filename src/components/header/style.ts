@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  background: linear-gradient(to bottom, #2a4065, #bb9135);
+
   div {
     display: flex;
     justify-content: space-between;
@@ -85,7 +87,7 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
-  
+
   @media only screen and (min-width: 768px) and (max-width: 900px) {
     div {
       padding: 32px 16px;
