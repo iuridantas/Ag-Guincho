@@ -5,14 +5,14 @@ import { BiMap } from 'react-icons/bi';
 
 export function SessionAssistance() {
   return (
-    <section aria-label="Explicação Sobre os valores: amor, compromisso e dedicação">
+    <section aria-label="Sobre a Assistência 24h" id="assistência">
       <AssistanceSession>
         <h2>SERVIÇO DE REBOQUE 24 HORAS EM VITÓRIA DA CONQUISTA E E REGIÃO</h2>
         <div className="container">
           <div className="assistance">
             <div className="info">
               <BiMap className="icon" />
-              <h3>ATENDEMOS VOCÊ</h3>
+              <h2>ATENDEMOS VOCÊ</h2>
               <p>
                 Oferecemos serviços de reboque e guincho 24 horas em Vitória da
                 Conquista e arredores, garantindo tranquilidade enquanto
@@ -21,7 +21,7 @@ export function SessionAssistance() {
             </div>
             <div className="info">
               <GiTowTruck className="icon" />
-              <h3>RAPIDEZ NO REBOQUE</h3>
+              <h2>RAPIDEZ NO REBOQUE</h2>
               <p>
                 Contamos com uma frota de veículos novos, modernos e equipados,
                 além de uma equipe de profissionais altamente treinados e
@@ -30,7 +30,7 @@ export function SessionAssistance() {
             </div>
             <div className="info">
               <BsCreditCard className="icon" />
-              <h3>OPÇÕES DE PAGAMENTO</h3>
+              <h2>OPÇÕES DE PAGAMENTO</h2>
               <p>
                 Oferecemos diversas opções de pagamento, incluindo dinheiro, PIX
                 e cartões de crédito e débito, para garantir que ninguém fique

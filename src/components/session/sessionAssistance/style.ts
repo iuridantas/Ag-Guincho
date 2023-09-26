@@ -1,28 +1,23 @@
 import styled from 'styled-components';
 
 export const AssistanceSession = styled.div`
-  display: flex;
-  flex-direction: column;
-
   .container {
     display: flex;
     max-width: 1440px;
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
   .assistance {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
   }
 
   h2 {
     font-size: 30px;
     margin: 20px auto;
-  }
-
-  h3 {
-    font-size: 30px;
-    margin: 10px 0;
     text-align: center;
   }
 
@@ -41,7 +36,7 @@ export const AssistanceSession = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 40px;
+    margin: 0 20px;
   }
 
   @media only screen and (max-width: 600px) {
@@ -52,13 +47,8 @@ export const AssistanceSession = styled.div`
 
     h2 {
       font-size: 20px;
-      margin: 5px;
       text-align: center;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin: 5px 20px;
+      margin: 10px;
     }
 
     p {
@@ -66,18 +56,6 @@ export const AssistanceSession = styled.div`
       font-size: 16px;
       text-align: justify;
     }
-
-    .info {
-      flex: none;
-      max-width: none;
-      margin: 10px auto;
-    }
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
     .info {
       margin: 10px auto;
