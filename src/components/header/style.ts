@@ -55,6 +55,7 @@ export const Container = styled.div`
       position: absolute;
       width: 100%;
       top: 194px;
+      background: linear-gradient(to bottom, #2a4065, #bb9135);
       right: 0;
       height: 0;
       transition: 0.6s;
@@ -84,6 +85,7 @@ export const Container = styled.div`
       cursor: pointer;
     }
   }
+  
   @media only screen and (min-width: 768px) and (max-width: 900px) {
     div {
       padding: 32px 16px;
@@ -95,6 +97,7 @@ export const Container = styled.div`
       position: absolute;
       width: 100%;
       top: 194px;
+      background: linear-gradient(to bottom, #2a4065, #bb9135);
       right: 0;
       height: 0;
       transition: 0.6s;

@@ -3,24 +3,33 @@ import { InitialSession } from './style';
 import { GiTowTruck } from 'react-icons/gi';
 
 export function SessionInitial() {
-  const images = [
-    '/img/foto1.png',
-    '/img/foto2.png',
-    '/img/foto3.png',
-    '/img/foto4.png',
-  ];
+  const desktopImages = ['/img/foto1.png', '/img/foto2.png'];
+
+  const mobileImages = ['/img/foto1_cel.png', '/img/foto2_cel.png'];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex + 1) % desktopImages.length,
+      );
     }, 6000);
+
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
 
     return () => {
       clearInterval(interval);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  const imagesToDisplay = windowWidth <= 600 ? mobileImages : desktopImages;
 
   return (
     <section aria-label="Seção Inicial do Site" id="inicio">
@@ -34,7 +43,7 @@ export function SessionInitial() {
               transition: 'transform 1s ease-in-out',
             }}
           >
-            {images.map((src, index) => (
+            {imagesToDisplay.map((src, index) => (
               <div key={index} style={{ flex: '0 0 100%' }}>
                 <img src={src} alt={`Foto do banner ${index}`} />
               </div>
