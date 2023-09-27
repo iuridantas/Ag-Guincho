@@ -25,7 +25,7 @@ export function SessionContact() {
             <p>ag_guincho</p>
           </a>
           <a
-            href="https://api.whatsapp.com/send?phone=5577988461478."
+            href="https://api.whatsapp.com/send?phone=5577988461478"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Número do WhatsApp de AG Guincho"
