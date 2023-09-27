@@ -8,30 +8,15 @@ import { FaWhatsappSquare, FaPhoneAlt } from 'react-icons/fa';
 export function Home() {
   const phoneNumber = '77988461478';
 
-  const operatorCodes = {
-    Claro: '21',
-    CTBC: '12',
-    Oi: '31',
-    OiBrasilTelecom: '14',
-    Nextel: '99',
-    Sercomtel: '4',
-    TIM: '41',
-    Vivo: '15',
-  };
-
-  const handlePhoneButtonClick = (operator: keyof typeof operatorCodes) => {
-    const operatorCode = operatorCodes[operator];
-    if (operatorCode) {
-      const fullPhoneNumber = `0${operatorCode}${phoneNumber}`;
-      window.location.href = `tel:${fullPhoneNumber}`;
-    }
+  const handlePhoneButtonClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
   };
 
   return (
     <Container aria-label="Página inicial">
       <Buttons>
         <a
-          href="https://api.whatsapp.com/send?phone=5577988461478"
+          href={`https://api.whatsapp.com/send?phone=55${phoneNumber}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Número do WhatsApp de AG Guincho"
@@ -42,10 +27,7 @@ export function Home() {
             alt="Ícone representando o WhatsApp de AG Guincho"
           />
         </a>
-        <a
-          className="phoneButton"
-          onClick={() => handlePhoneButtonClick('Claro')}
-        >
+        <a className="phoneButton" onClick={handlePhoneButtonClick}>
           <FaPhoneAlt
             className="phone"
             alt="Ícone representando o telefone de AG Guincho"
