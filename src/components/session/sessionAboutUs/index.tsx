@@ -4,9 +4,9 @@ export function SessionAboutUs() {
   return (
     <section aria-label="Sobre Nós" id="sobre-nos">
       <AboutUsSession>
-        <h2>GA Guincho: Segurança, agilidade e compromisso</h2>
+        <h2>AG Guincho: Segurança, agilidade e compromisso</h2>
         <p>
-          A GA Guincho é a sua principal escolha para serviços de guincho,
+          A AG Guincho é a sua principal escolha para serviços de guincho,
           reboque de veículos e transporte de equipamentos e máquinas em Vitória
           da Conquista e toda a região. Nossa missão é proporcionar segurança,
           agilidade e compromisso a cada cliente, a qualquer hora do dia ou da
@@ -21,7 +21,7 @@ export function SessionAboutUs() {
         </p>
         <p>
           Oferecemos flexibilidade de pagamento, aceitando dinheiro, PIX e
-          cartões de crédito e débito para sua comodidade. Na GA Guincho,
+          cartões de crédito e débito para sua comodidade. Na AG Guincho,
           estamos prontos para atender às suas necessidades de transporte a
           qualquer momento e em qualquer lugar. Conte conosco para fornecer
           soluções confiáveis e eficientes sempre que precisar.

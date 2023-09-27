@@ -6,7 +6,7 @@ import { Container, Buttons } from './style';
 import { FaWhatsappSquare, FaPhoneAlt } from 'react-icons/fa';
 
 export function Home() {
-  const phoneNumber = '77988461478';
+  const phoneNumber = '077988461478';
 
   const handlePhoneButtonClick = () => {
     window.location.href = `tel:${phoneNumber}`;
