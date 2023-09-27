@@ -4,7 +4,7 @@ export const AssistanceSession = styled.div`
   .container {
     display: flex;
     max-width: 1440px;
-    margin: 10px auto;
+    margin: 5px auto;
   }
 
   .assistance {
@@ -12,7 +12,7 @@ export const AssistanceSession = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin: 20px auto;
+    margin: auto;
   }
 
   h2 {

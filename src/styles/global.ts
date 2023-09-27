@@ -18,7 +18,7 @@ export default createGlobalStyle`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #bb9135c2;
+  background: #A1823D;
   color: #ffffff;
 }
 `;
