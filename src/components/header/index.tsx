@@ -11,11 +11,9 @@ export function Header() {
       if (!nav) return;
       nav.classList.toggle('active');
       const active = nav.classList.contains('active');
-      (event.currentTarget as HTMLElement).setAttribute(
-        'aria-expanded',
-        active.toString(),
-      );
-      (event.currentTarget as HTMLElement).setAttribute(
+      const targetElement = event.currentTarget as HTMLElement;
+      targetElement.setAttribute('aria-expanded', active.toString());
+      targetElement.setAttribute(
         'aria-label',
         active ? 'Fechar Menu' : 'Abrir Menu',
       );
@@ -35,23 +33,20 @@ export function Header() {
 
     const navLinks = document.querySelectorAll('#menu a');
 
+    function handleNavLinkClick(event: Event) {
+      event.preventDefault();
+      const target = (event.target as HTMLElement).getAttribute('href');
+      if (target) scrollToTarget(target);
+    }
+
     navLinks.forEach((link) => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const target = (event.target as HTMLElement).getAttribute('href');
-        if (target) scrollToTarget(target);
-      });
+      link.addEventListener('click', handleNavLinkClick);
     });
 
     return () => {
       btnMobile?.removeEventListener('click', toggleMenu);
-
       navLinks.forEach((link) => {
-        link.addEventListener('click', (event) => {
-          event.preventDefault();
-          const target = (event.target as HTMLElement).getAttribute('href');
-          if (target) scrollToTarget(target);
-        });
+        link.removeEventListener('click', handleNavLinkClick);
       });
     };
   }, []);
@@ -62,7 +57,7 @@ export function Header() {
         <div>
           <img
             src="/img/logo.png"
-            alt="logo"
+            alt="Logotipo da AG Guincho"
             aria-label="Logotipo da AG Guincho"
           />
           <nav id="nav">
@@ -83,12 +78,12 @@ export function Header() {
               </li>
               <li>
                 <a href="assistência" className="container-link">
-                  Assistência 24h
+                  Assistência 24 Horas
                 </a>
               </li>
               <li>
                 <a href="sobre-nos" className="container-link">
-                  Sobre Nós
+                  Sobre Nossa Empresa
                 </a>
               </li>
               <li>

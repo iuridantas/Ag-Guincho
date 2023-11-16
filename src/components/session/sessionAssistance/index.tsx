@@ -5,13 +5,17 @@ import { BiMap } from 'react-icons/bi';
 
 export function SessionAssistance() {
   return (
-    <section aria-label="Sobre a Assistência 24h" id="assistência">
+    <article aria-label="Sobre a Assistência 24h" id="assistência">
       <AssistanceSession>
-        <h2>SERVIÇO DE REBOQUE 24 HORAS EM VITÓRIA DA CONQUISTA E E REGIÃO</h2>
+        <header>
+          <h2>
+            SERVIÇO DE REBOQUE 24 HORAS EM VITÓRIA DA CONQUISTA E E REGIÃO
+          </h2>
+        </header>
         <div className="container">
-          <div className="assistance">
+          <section className="assistance">
             <div className="info">
-              <BiMap className="icon" />
+              <BiMap className="icon" alt="Ícone de mapa" />
               <h2>ATENDEMOS VOCÊ</h2>
               <p>
                 Oferecemos serviços de reboque e guincho 24 horas em Vitória da
@@ -20,7 +24,7 @@ export function SessionAssistance() {
               </p>
             </div>
             <div className="info">
-              <GiTowTruck className="icon" />
+              <GiTowTruck className="icon" alt="Ícone de caminhão de reboque" />
               <h2>RAPIDEZ NO REBOQUE</h2>
               <p>
                 Contamos com uma frota de veículos novos, modernos e equipados,
@@ -29,7 +33,7 @@ export function SessionAssistance() {
               </p>
             </div>
             <div className="info">
-              <BsCreditCard className="icon" />
+              <BsCreditCard className="icon" alt="Ícone de cartão de crédito" />
               <h2>OPÇÕES DE PAGAMENTO</h2>
               <p>
                 Oferecemos diversas opções de pagamento, incluindo dinheiro, PIX
@@ -37,9 +41,9 @@ export function SessionAssistance() {
                 desamparado quando mais precisa.
               </p>
             </div>
-          </div>
+          </section>
         </div>
       </AssistanceSession>
-    </section>
+    </article>
   );
 }

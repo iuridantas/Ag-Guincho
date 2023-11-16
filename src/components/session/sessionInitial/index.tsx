@@ -51,7 +51,7 @@ export function SessionInitial() {
           </div>
           <div className="text-container">
             <div className="text-center">
-              <GiTowTruck className="icon" />
+              <GiTowTruck className="icon" alt="Ícone de caminhão de reboque" />
               <h1 className="front-heading">AG GUINCHO</h1>
               <h2 className="sub-heading">(77) 9 8846-1478</h2>
               <h2 className="sub-heading">

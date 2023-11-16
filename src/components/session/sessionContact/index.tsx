@@ -4,9 +4,11 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 export function SessionContact() {
   return (
-    <section aria-label="Contato" id="contato">
+    <article aria-label="Contato" id="contato">
       <ContactSession>
-        <h2>Entre em contato</h2>
+        <header>
+          <h2>Entre em contato</h2>
+        </header>
         <div>
           <a
             href="https://instagram.com/ag_guincho?igshid=MzRlODBiNWFlZA=="
@@ -36,8 +38,7 @@ export function SessionContact() {
                 className="whatsApp"
                 alt="Ícone representando o WhatsApp de AG Guincho"
               />
-              <span />
-              WhatsApp
+              <span>WhatsApp</span>
             </h3>
             <p>(77) 9 8846-1478</p>
           </a>
@@ -53,13 +54,12 @@ export function SessionContact() {
                 className="email"
                 alt="Ícone representando o Email de AG Guincho"
               />
-              <span />
-              Email
+              <span>Email</span>
             </h3>
             <p>alanadps123@hotmail.com</p>
           </a>
         </div>
       </ContactSession>
-    </section>
+    </article>
   );
 }

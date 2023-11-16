@@ -9,7 +9,7 @@ export function Home() {
   const phoneNumber = '077988461478';
 
   const handlePhoneButtonClick = () => {
-    window.location.href = `tel:${phoneNumber}`;
+    window.location.href = `tel:+55${phoneNumber}`;
   };
 
   return (
@@ -19,19 +19,22 @@ export function Home() {
           href={`https://api.whatsapp.com/send?phone=55${phoneNumber}`}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Número do WhatsApp de AG Guincho"
-          title="Número do WhatsApp de AG Guincho"
+          aria-label="Número do WhatsApp de AG Guincho - Clique para abrir no WhatsApp"
+          title="Número do WhatsApp de AG Guincho - Clique para abrir no WhatsApp"
         >
           <FaWhatsappSquare
             className="whatsApp"
-            alt="Ícone representando o WhatsApp de AG Guincho"
+            alt="Ícone do WhatsApp de AG Guincho"
           />
         </a>
-        <a className="phoneButton" onClick={handlePhoneButtonClick}>
-          <FaPhoneAlt
-            className="phone"
-            alt="Ícone representando o telefone de AG Guincho"
-          />
+        <a
+          className="phoneButton"
+          onClick={handlePhoneButtonClick}
+          aria-label="Telefone de AG Guincho - Clique para ligar"
+          title="Telefone de AG Guincho - Clique para ligar"
+        >
+          <FaPhoneAlt className="phone" alt="Ícone de telefone de AG Guincho" />
+          <span>(77) 9 8846-1478</span>
         </a>
       </Buttons>
       <SessionInitial />
