@@ -31,6 +31,12 @@ export function SessionInitial() {
 
   const imagesToDisplay = windowWidth <= 600 ? mobileImages : desktopImages;
 
+  const phoneNumber = '077988461478';
+
+  const handlePhoneButtonClick = () => {
+    window.location.href = `tel:+55${phoneNumber}`;
+  };
+
   return (
     <section aria-label="Seção Inicial do Site" id="inicio">
       <InitialSession>
@@ -53,13 +59,12 @@ export function SessionInitial() {
             <div className="text-center">
               <GiTowTruck className="icon" alt="Ícone de caminhão de reboque" />
               <h1 className="front-heading">AG GUINCHO</h1>
+
               <a
                 className="sub-heading"
-                href="https://api.whatsapp.com/send?phone=5577988461478"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Número do WhatsApp de AG Guincho"
-                title="Número do WhatsApp de AG Guincho"
+                onClick={handlePhoneButtonClick}
+                aria-label="Telefone de AG Guincho - Clique para ligar"
+                title="Telefone de AG Guincho - Clique para ligar"
               >
                 (77) 9 8846-1478
               </a>

@@ -52,6 +52,10 @@ export const InitialSession = styled.div`
     text-decoration: none;
   }
 
+  a {
+    cursor: pointer;
+  }
+
   @media only screen and (max-width: 600px) {
     .icon {
       font-size: 100px;
