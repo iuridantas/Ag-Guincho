@@ -53,7 +53,16 @@ export function SessionInitial() {
             <div className="text-center">
               <GiTowTruck className="icon" alt="Ícone de caminhão de reboque" />
               <h1 className="front-heading">AG GUINCHO</h1>
-              <h2 className="sub-heading">(77) 9 8846-1478</h2>
+              <a
+                className="sub-heading"
+                href="https://api.whatsapp.com/send?phone=5577988461478"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Número do WhatsApp de AG Guincho"
+                title="Número do WhatsApp de AG Guincho"
+              >
+                (77) 9 8846-1478
+              </a>
               <h2 className="sub-heading">
                 REBOQUE 24H - VITÓRIA DA CONQUISTA E REGIÃO
               </h2>

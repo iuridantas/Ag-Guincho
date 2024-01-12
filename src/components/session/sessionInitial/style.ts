@@ -49,6 +49,7 @@ export const InitialSession = styled.div`
     color: #ffffff;
     font-size: 30px;
     margin: 5px auto;
+    text-decoration: none;
   }
 
   @media only screen and (max-width: 600px) {

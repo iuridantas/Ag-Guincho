@@ -34,7 +34,6 @@ export function Home() {
           title="Telefone de AG Guincho - Clique para ligar"
         >
           <FaPhoneAlt className="phone" alt="Ícone de telefone de AG Guincho" />
-          <span>(77) 9 8846-1478</span>
         </a>
       </Buttons>
       <SessionInitial />
