@@ -9,7 +9,7 @@ export function Home() {
   const phoneNumber = '077988461478';
 
   const handlePhoneButtonClick = () => {
-    window.location.href = `tel:+55${phoneNumber}`;
+    window.location.href = `tel:${phoneNumber}`;
   };
 
   return (
